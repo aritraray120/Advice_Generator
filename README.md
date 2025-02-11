@@ -1,4 +1,4 @@
-# Advice Generator  
+# Advice Gen 
 🔗 **Live Demo:** https://advice-generator-sigma-one.vercel.app/  
 
 A simple React app that generates random advice on button click. Fully responsive and optimized for all screen sizes.  
