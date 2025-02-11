@@ -27,7 +27,7 @@ function App() {
     { "person": "Marcus Aurelius", "advice": "You have power over your mind—not outside events. Realize this, and you will find strength." },
     { "person": "Gandhi", "advice": "Live as if you were to die tomorrow. Learn as if you were to live forever." },
     { "person": "Jeff Bezos", "advice": "If you never want to be criticized, for goodness' sake don’t do anything new." }
-  ];  
+  ];
 
   const [advice, setAdvice] = useState("");
 
@@ -41,7 +41,10 @@ function App() {
       <div className="flex w-[85vw] flex-col items-center justify-center rounded-2xl bg-[#323a49] px-[40px] pt-[20px] text-center sm:w-[540px]">
         <div className="my-[25px] text-base font-bold text-[#52ffa8]">ADVICE</div>
 
-        <div className="mb-[25px] text-[28px] font-extrabold text-[#cee3e9]">{advice?.advice || "Click the dice for advice"}</div>
+        <div className="mb-[25px] h-[120px] overflow-hidden text-[28px] font-extrabold text-[#cee3e9]">
+          {advice?.advice || "Click the dice for advice"}
+        </div>
+
 
         <svg className="my-[10px] w-full sm:w-[444px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 16" height="auto">
           <g fill="none" fill-rule="evenodd">
